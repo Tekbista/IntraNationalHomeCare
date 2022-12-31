@@ -1,0 +1,33 @@
+<nav class="mynavbar">
+    <div class="menu-icon">
+        <fa-icon  [icon]="menuIcon" (click)="toggleMenu()"></fa-icon>
+    </div>
+</nav>
+
+
+<ul class="mynavbar-nav">
+    <li class="mynavbar-nav-item" (click)="toggleMenu()">
+        <fa-icon class="list-icon" [icon]="homeIcon"></fa-icon>
+        <a class="mynavbar-nav-link"  routerLink="">Home</a>
+    </li>
+    <li class="mynavbar-nav-item" (click)="toggleMenu()">
+        <fa-icon class="list-icon" [icon]="infoIcon"></fa-icon>
+        <a class="mynavbar-nav-link" routerLink="/aboutus">About Us</a>
+    </li>
+    <li class="mynavbar-nav-item" (click)="toggleMenu()">
+        <fa-icon class="list-icon" [icon]="serviceIcon"></fa-icon>
+        <a class="mynavbar-nav-link" routerLink="/service">Service</a>
+    </li>
+    <li class="mynavbar-nav-item" (click)="toggleMenu()">
+        <fa-icon class="list-icon" [icon]="locIcon"></fa-icon>
+        <a class="mynavbar-nav-link" routerLink="/servicelocation">Service Location</a>
+    </li>
+    <li class="mynavbar-nav-item" (click)="toggleMenu()">
+        <fa-icon class="list-icon" [icon]="phoneIcon"></fa-icon>
+        <a class="mynavbar-nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+    <li class="mynavbar-nav-item" (click)="toggleMenu()">
+        <fa-icon class="list-icon" [icon]="homeIcon"></fa-icon>
+        <a class="mynavbar-nav-link" routerLink="/resources">Resources</a>
+    </li>
+</ul>

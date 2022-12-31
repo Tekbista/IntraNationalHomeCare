@@ -1,0 +1,19 @@
+.card{
+    background-color: rgb(93, 173, 226);
+    background-size: cover;
+    color: #fff;
+}
+
+.card-header{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellow;
+}
+.card-text{
+    font-size: 12px;
+}
+
+fa-icon{
+    margin-right: 5px;
+}

@@ -1,0 +1,50 @@
+h1, h2, h3, h5, h6{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: blueviolet;
+}
+p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+.statement{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.statement > p{
+    text-align: left;
+}
+
+.statement-title{
+    color: blueviolet;
+    font-family: cursive;
+}
+
+.statement > img{
+    max-width: 100%;
+}
+
+ul{
+    text-align: left;
+}
+
+ul > li{
+    list-style: none;
+    list-style-image: url("../../../assets/images/circle-check-regular.svg");
+}
+
+ul > li::marker{
+    font-size: 2rem;
+}
+
+strong{
+    color: blueviolet;
+}
+

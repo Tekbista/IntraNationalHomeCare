@@ -1,0 +1,32 @@
+
+h1, h2, h3, h5, h6{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: blueviolet;
+}
+p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+
+ul{
+    text-align: left;
+}
+
+ul > li{
+    list-style: none;
+    list-style-image: url("../../../assets/images/circle-check-regular.svg");
+}
+
+ul > li::marker{
+    font-size: 2rem;
+}
+
+.col-md-4 > img{
+    max-width: 100%;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+}
+
+

@@ -1,0 +1,48 @@
+.item{
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.item:hover{
+    background-color: rgb(28, 83, 86);
+    cursor: pointer;
+}
+
+.title{
+    color: yellow;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.btn-learnmore{
+    border: 1px solid #fff;
+    background-color: inherit;
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-learnmore:hover{
+    background-color: rgb(28, 83, 86);
+}
+
+fa-icon{
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.col-5 >img{
+    max-width: 100%;
+}

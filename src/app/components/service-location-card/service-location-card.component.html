@@ -1,0 +1,15 @@
+<div class="row row-cols-1 row-cols-md-2 g-4 mt-4 mb-4">
+    <div class="col" *ngFor="let office of offices">
+        <div class="card text-white mb-3">
+            <div class="card-header">{{office.office}}</div>
+            <div class="card-body">
+              <p class="card-text"><fa-icon [icon]="personIcon"></fa-icon>{{office.contactPerson}}</p>
+              <p class="card-text"><fa-icon [icon]="locationIcon"></fa-icon>{{office.officeAddress}}</p>
+              <p class="card-text"><fa-icon [icon]="phoneIcon"></fa-icon>{{office.phone}}</p>
+              <p class="card-text"><fa-icon [icon]="faxIcon"></fa-icon> {{office.fax}}</p>
+              <p class="card-text"><fa-icon [icon]="emailIcon"></fa-icon>{{office.email}}</p>
+            </div>
+        </div>
+    </div>
+    
+</div>

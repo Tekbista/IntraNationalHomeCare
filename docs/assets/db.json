@@ -1,0 +1,161 @@
+{
+    "serviceLocation": [
+        {
+            "office":"Corporate Office Colombus",
+            "contactPerson":"Dilli Adhikari",
+            "officeAddress":"1279 E Dublin Granville Rd. Columbus, Ohio 43229",
+            "phone": "(614) 601-6127",
+            "fax": "614-601-6160",
+            "email": "columbus@intrahc.com"
+        },
+        {
+            "office":"Akron Office",
+            "contactPerson":"Rudra Baniya",
+            "officeAddress":"127 E Cuyahoga Falls Avenue Akron, Ohio 44310",
+            "phone": "234-334-7786",
+            "fax": "234-334-7787",
+            "email": "akron@intrahc.com"
+        },
+        {
+            "office":"Cincinnati Office",
+            "contactPerson":"Prakash Mishra | Yogesh Adhikari",
+            "officeAddress":"7180 Pippin Road Cincinnati, Ohio 45239",
+            "phone": "513-918-2448",
+            "fax": "513-918-2449",
+            "email": "cincinnati@intrahc.com"
+        },
+        {
+            "office":"Pennsylvania Headquarter Office",
+            "contactPerson":"Govinda Khatiwada",
+            "officeAddress":"4745 Clairton Blvd. Pittsburgh, PA 15236",
+            "phone": "412-721-3582",
+            "fax": "412-881-7101",
+            "email": "gkhatiwada@intrahc.com"
+        },
+        {
+            "office":"Pittsburgh Office",
+            "contactPerson":"Khara Sanjel",
+            "officeAddress":"4745 Clairton Blvd. Pittsburgh, PA 15236",
+            "phone": "412-881-7100",
+            "fax": "412-881-7101",
+            "email": "pittsburgh@intrahc.com | ksanjel@intrahc.com"
+        },
+        {
+            "office":"Erie Office",
+            "contactPerson":"Chandra Bista",
+            "officeAddress":"1234 French Street,Erie, PA 16501",
+            "phone": "814-898-1309",
+            "fax": "814-898-1290",
+            "email": " erie@intrahc.com | ytimsina@intrahc.com"
+        },
+        {
+            "office":"Harrisburgh Office",
+            "contactPerson":"Chandra Chhetri",
+            "officeAddress":"5320 Jaycee Ave,Harrisburg, PA 17112",
+            "phone": "717-695-6950",
+            "fax": "717-695-6955",
+            "email": "harrisburg@intrahc.com | cchhetri@intrahc.com"
+        },
+        {
+            "office":"Philadelphia Office",
+            "contactPerson":"Pabitra Gurung",
+            "officeAddress":"2010-2012 South 7th Street, 1st Floor Philadelphia, PA 19148",
+            "phone": "215-278-2272",
+            "fax": "215-467-3981",
+            "email": "philadelphia@intrahc.com | pgurung@intrahc.com"
+        },
+        {
+            "office":"Scranton Office",
+            "contactPerson":"Tara Man Shankar",
+            "officeAddress":"611 Morgan Hwy, South Abington Township, PA 18411",
+            "phone": "570-344-0600",
+            "fax": "570-871-4426",
+            "email": "scranton@intrahc.com | tshankar@intrahc.com"
+        },
+        {
+            "office":"Michigan Office",
+            "contactPerson":"William Bryant | Dilli Adhikari",
+            "officeAddress":"2120 44th Street South East, Suite 200 Kentwood, Michigan 49508",
+            "phone": "616-805-3312 | 616-723-1565",
+            "fax": "616-724-4838",
+            "email": "miintranational@yahoo.com"
+        }
+    ],
+    "resources": [
+        {
+            "title": "National Association for Home Care and Hospice",
+            "link": "http://www.nahc.org/"
+        },
+        {
+            "title":"American Health Care Association",
+            "link": "http://www.ahcancal.org"
+        },
+        {
+            "title":"Everyday Health – Online Health Information",
+            "link": "http://www.everydayhealth.com/"
+        },
+        {
+            "title":"Centers for Medicare & Medicaid Services (CMS)",
+            "link": "http://www.cms.gov/"
+        },
+        {
+            "title":"Health Finder",
+            "link": "http://www.healthfinder.gov/"
+        },
+        {
+            "title":"FamiliesUSA",
+            "link": "http://www.familiesusa.org/"
+        },
+        {
+            "title":"U.S. Department of Health & Human Services",
+            "link": "http://www.hhs.gov/"
+        },
+        {
+            "title":"American Health Care Association",
+            "link": "https://www.ahcancal.org/Pages/Default.aspx"
+        },
+        {
+            "title":"Alzheimer’s Association",
+            "link": "http://www.alz.org/index.asp"
+        },
+        {
+            "title":"Elderly Abuse & Neglect",
+            "link": "http://www.ncea.aoa.gov/index.aspx"
+        },
+        {
+            "title":"LGBT Elder Initiative",
+            "link": "http://www.lgbtei.org/"
+        },
+        {
+            "title":"National Council on Disability",
+            "link": "http://www.ncd.gov/"
+        },
+        {
+            "title":"Us Naturalization Citizenship Test Practice in Nepali Language",
+            "link": "https://www.youtube.com/watch?v=TZY9ht9VEpw/"
+        },
+        {
+            "title":"Us Naturalization Citizenship Test Practice in Nepali Language",
+            "link": "https://www.youtube.com/watch?v=VRnEqPq-yjk/"
+        },
+        {
+            "title":"National Suicide Prevention Lifeline",
+            "link": "http://www.suicidepreventionlifeline.org/gethelp/lifelinechat.aspx"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

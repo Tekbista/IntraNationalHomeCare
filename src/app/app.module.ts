@@ -20,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MeetOurCaregiverComponent } from './pages/meet-our-caregiver/meet-our-caregiver.component';
 import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
+import { CareersComponent } from './pages/careers/careers.component';
+import { ServiceCardsComponent } from './components/service-cards/service-cards.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { TestimonialsComponent } from './pages/testimonials/testimonials.compone
     SidebarComponent,
     ServiceLocationCardComponent,
     MeetOurCaregiverComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    CareersComponent,
+    ServiceCardsComponent
   ],
   imports: [
     BrowserModule,

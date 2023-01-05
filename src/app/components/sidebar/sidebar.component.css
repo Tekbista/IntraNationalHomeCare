@@ -10,9 +10,11 @@
 }
 
 .item:hover{
-    background-color: rgb(28, 83, 86);
+    background: rgb(28, 83, 86);
+    transition: background 1s;
     cursor: pointer;
 }
+
 
 .title{
     color: yellow;

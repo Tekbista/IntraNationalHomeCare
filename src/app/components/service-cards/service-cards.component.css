@@ -1,0 +1,17 @@
+.card{
+    border: none;
+    background-color: rgb(208, 250, 243);
+}
+.card-body{
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.card > img{
+    height: 300px;
+    width: 300px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    align-self: center;
+}

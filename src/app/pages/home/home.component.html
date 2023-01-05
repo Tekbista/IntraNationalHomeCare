@@ -4,11 +4,10 @@
   <app-sliding-banner></app-sliding-banner>
 
   <div class="row mt-2 mb-2 p-3">
-    <div class="col-md-3 p-2">
+    <div class="col-md-3 p-2 sidebar">
       <app-sidebar></app-sidebar>
     </div>
-
-
+    
     <div class="col-md-8 p-4">
       <h5>Welcome to Intra National Home Care LLC</h5>
       <p>Intra-National Home Care, LLC is a distinguished non-medical home care, 
@@ -26,43 +25,7 @@
       </p>
       <p>Ask us about your home care options! <strong>Call 616-710-7258 / 412-721-3582 / 412-881-7100</strong> today!</p>
 
-      <div class="mt-4 mb-4">
-        <h2>Service We Offer</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="../../../assets/images/companionship.jpeg" class="card-img-top" alt="Companionship">
-              <div class="card-body">
-                <h4 class="card-title">Companionship</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="../../../assets/images/light-house-keeping-laundry-home-care-south-carolina.jpg" class="card-img-top" alt="Housekeeping">
-              <div class="card-body">
-                <h4 class="card-title">Light Housekeeping</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="../../../assets/images/Personal Care Services.png" class="card-img-top" alt="Personal Care">
-              <div class="card-body">
-                <h4 class="card-title">Personal Care</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="../../../assets/images/more service.jpeg" class="card-img-top" alt="More Service">
-              <div class="card-body">
-                <h4 class="card-title">More Service</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <app-service-cards></app-service-cards>
     </div>
   </div>
 
@@ -76,7 +39,7 @@
        of "Assistance with independent living while remaining in the home environment for as long as possible."
       
     </p>
-    <button class="btn-about">About Us</button>
+    <button class="btn-about" routerLink="/aboutus">About Us</button>
   </div>
   <hr>
 </div>

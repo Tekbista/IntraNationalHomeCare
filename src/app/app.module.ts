@@ -14,14 +14,16 @@ import { ResourcesComponent } from './pages/resources/resources.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SlidingBannerComponent } from './components/sliding-banner/sliding-banner.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ServiceLocationCardComponent } from './components/service-location-card/service-location-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MeetOurCaregiverComponent } from './pages/meet-our-caregiver/meet-our-caregiver.component';
-import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
 import { CareersComponent } from './pages/careers/careers.component';
 import { ServiceCardsComponent } from './components/service-cards/service-cards.component';
+import { NonDescriminationPoliciesComponent } from './pages/non-descrimination-policies/non-descrimination-policies.component';
+import { ServiceOfferComponent } from './pages/service-offer/service-offer.component';
+import { ErrorComponent } from './pages/error/error.component';
+import { FlipCardComponent } from './components/flip-card/flip-card.component';
 
 @NgModule({
   declarations: [
@@ -36,12 +38,14 @@ import { ServiceCardsComponent } from './components/service-cards/service-cards.
     HeaderComponent,
     FooterComponent,
     SlidingBannerComponent,
-    SidebarComponent,
     ServiceLocationCardComponent,
     MeetOurCaregiverComponent,
-    TestimonialsComponent,
     CareersComponent,
-    ServiceCardsComponent
+    ServiceCardsComponent,
+    NonDescriminationPoliciesComponent,
+    ServiceOfferComponent,
+    ErrorComponent,
+    FlipCardComponent,
   ],
   imports: [
     BrowserModule,

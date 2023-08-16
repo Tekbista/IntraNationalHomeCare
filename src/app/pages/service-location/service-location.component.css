@@ -4,8 +4,19 @@ h1, h2, h3, h5, h6{
     color: blueviolet;
 }
 
-@media only screen and (max-width: 768px){
-    .sidebar{
-        order: 2;
-    }
+.service-area{
+    max-width: 100%;
+}
+
+ul{
+    text-align: left;
+}
+
+ul > li{
+    list-style: none;
+    list-style-image: url("../../../assets/images/circle-check-regular.svg");
+}
+
+ul > li::marker{
+    font-size: 2rem;
 }

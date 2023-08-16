@@ -14,6 +14,10 @@ h1, h2, h3, h5, h6{
     overflow-wrap: break-word;
 }
 
+.panel:hover{
+    box-shadow: 0 0 20px rgb(31, 32, 30);
+}
+
 .panel-heading{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -24,8 +28,3 @@ h1, h2, h3, h5, h6{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px){
-    .sidebar{
-        order: 2;
-    }
-}

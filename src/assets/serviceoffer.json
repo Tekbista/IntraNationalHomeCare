@@ -1,0 +1,127 @@
+[
+    {
+        "title": "Companionship",
+        "imageURL": "../../../assets/images/companionship.jpeg",
+        "description": [
+            "Intra-National Home Care, LLC will provide you or your loved one with cheerful companions who can accompany you and also provide safety supervision."
+        ],
+        "supportService": [
+            "Assistance in Planning Daily Schedule",
+            "Reminders to Take Medication",
+            "Conversation",
+            "Gardening Assistance",
+            "Grocery Shopping",
+            "Assist with Walking",
+            "Fun and Leisure activities",
+            "Meal Preparation Assistance",
+            "Light Housekeeping",
+            "Watching Movies",
+            "Plan Vacations",
+            "Aid with ADL’s and IADL’s",
+            "Check Food Expirations",
+            "Arrange Medical Appointments",
+            "Supervision of Consumers",
+            "Hair Cair",
+            "Lotion and Ointment",
+            "Woundcare",
+            "Telephone Communication Services"
+        ]
+
+    },
+    {
+        "title": "Light Housekeeping",
+        "imageURL": "../../../assets/images/light-house-keeping.jpg",
+        "description": [
+            "Keeping the home environment clean and tidy is definitely important but if you have to do it yourself and risk your health, you need to ask for help. At Intra-National Home Care, LLC, we can provide you with homemakers and"
+        ],
+        "supportService": [
+            "Bathroom Clean-Up",
+            "Grocery Shopping",
+            "Making the Bed",
+            "Daily Trash Disposal",
+            "Organizing the Closet",
+            "Washing Dishes",
+            "Vacuuming",
+            "Running Errands for the Client",
+            "Dropping Letters in the Post Office",
+            "Arranging for Transportation",
+            "Doing the Laundry",
+            "Going to the Pharmacy",
+            "Iron Clothes",
+            "Checking Food Expiry Dates",
+            "Changing Linens and Sheets"
+        ]
+    },
+    {
+        "title": "Personal Care",
+        "imageURL": "../../../assets/images/Personal Care Services.png",
+        "description": [
+            "Personal Care is a comprehensive set of services that covers the daily living needs of the client at home. We see to it that the client practices his or her highest level of independence. Where our help is needed, we will be there."
+        ],
+        "supportService": [
+            "Assistance with bathing and dressing",
+            "Feeding assistance",
+            "Personal hygiene",
+            "Incontinence care",
+            "Oral hygiene/Denture care",
+            "Toileting & diapering",
+            "Nail Care",
+            "Grooming",
+            "Range of motion exercises",
+            "Ambulation/Standby Assistance",
+            "Assistance with Dressing",
+            "Help with Getting In or Out of Bed",
+            "Assistance with Mobility",
+            "Monitor Diet & Eating Habits",
+            "Assistance with Personal Hygiene",
+            "Assistance in Going Up and Down the Stairs"
+        ]
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

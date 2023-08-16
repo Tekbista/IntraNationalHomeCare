@@ -1,33 +1,61 @@
-<nav class="mynavbar">
-    <div class="menu-icon">
-        <fa-icon  [icon]="menuIcon" (click)="toggleMenu()"></fa-icon>
+<nav class="navbar navbar-light bg-orange">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
 </nav>
+<!-- OffCanvas-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title">Menu</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <hr>
+    <div class="offcanvas-body">
+        <ul>
+            <li routerLink="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}">
+                <fa-icon class="list-icon" [icon]="homeIcon"></fa-icon>
+                Home
+            </li>
+            <li routerLink="/aboutus" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="infoIcon"></fa-icon>
+                About Us
+            </li>
+            <li routerLink="/service" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="serviceIcon"></fa-icon>
+                Service
+            </li>
+            <li routerLink="/servicelocation" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="locIcon"></fa-icon>
+                Service Location
+            </li>
+            <li routerLink="/contact" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="phoneIcon"></fa-icon>
+                Contact Us
+            </li>
+            <li routerLink="/resources" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="homeIcon"></fa-icon>
+                Resources
+            </li>
+            <li routerLink="/meet-our-caregivers" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="meetIcon"></fa-icon>
+                Meet Our Caregivers
+            </li>
+            
+            <li routerLink="/careers" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="careerIcon"></fa-icon>
+                Career
+            </li>
+            <li routerLink="/non-descrimination-policies" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="policyIcon"></fa-icon>
+                Non-Descriminaiton Policy
+            </li>
+            <li (click)="onClick()" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" [routerLinkActive]="'active'">
+                <fa-icon class="list-icon" [icon]="downloadIcon"></fa-icon>
+                Download Brochure
+            </li>
+        </ul>
+    </div>
+  </div>
 
-
-<ul class="mynavbar-nav">
-    <li class="mynavbar-nav-item" (click)="toggleMenu()">
-        <fa-icon class="list-icon" [icon]="homeIcon"></fa-icon>
-        <a class="mynavbar-nav-link"  routerLink="">Home</a>
-    </li>
-    <li class="mynavbar-nav-item" (click)="toggleMenu()">
-        <fa-icon class="list-icon" [icon]="infoIcon"></fa-icon>
-        <a class="mynavbar-nav-link" routerLink="/aboutus">About Us</a>
-    </li>
-    <li class="mynavbar-nav-item" (click)="toggleMenu()">
-        <fa-icon class="list-icon" [icon]="serviceIcon"></fa-icon>
-        <a class="mynavbar-nav-link" routerLink="/service">Service</a>
-    </li>
-    <li class="mynavbar-nav-item" (click)="toggleMenu()">
-        <fa-icon class="list-icon" [icon]="locIcon"></fa-icon>
-        <a class="mynavbar-nav-link" routerLink="/servicelocation">Service Location</a>
-    </li>
-    <li class="mynavbar-nav-item" (click)="toggleMenu()">
-        <fa-icon class="list-icon" [icon]="phoneIcon"></fa-icon>
-        <a class="mynavbar-nav-link" routerLink="/contact">Contact Us</a>
-    </li>
-    <li class="mynavbar-nav-item" (click)="toggleMenu()">
-        <fa-icon class="list-icon" [icon]="homeIcon"></fa-icon>
-        <a class="mynavbar-nav-link" routerLink="/resources">Resources</a>
-    </li>
-</ul>

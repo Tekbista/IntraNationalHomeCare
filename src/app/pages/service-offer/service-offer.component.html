@@ -1,0 +1,26 @@
+<div class="container mx-auto mt-2 mb-2 pt-2 pb-2">
+   
+    <h3>{{service.title}}</h3>
+    <div class="row mt-2 mb-2">
+        <div class="col-sm-9">
+            <p *ngFor="let desc of service.description"> {{desc}}</p>
+        </div>
+
+        <div class="col-sm-3 mb-3">
+            <!-- <img src="{{service.imageURL}}" alt="{{service.title}}"> -->
+            <app-flip-card></app-flip-card>
+        </div>
+
+        <strong class="mb-3">{{service.title}} offers following services:</strong>
+        <ul>
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="col" *ngFor="let list of service.supportService">
+                    <li >{{list}}</li>
+                </div>
+            </div>
+            
+        </ul>
+    </div>
+    
+  
+</div>

@@ -1,108 +1,99 @@
 <div class="container mx-auto mt-2 mb-2 pt-2 pb-2">
-  <div class="row mt-2 mb-2 p-3">
-      <div class="col-md-3 p-2 sidebar">
-          <app-sidebar></app-sidebar>
-      </div>
-  
-  
-      <div class="col-md-8 p-4">
-          <h3>Contact Us</h3>
-          <div class="row row-cols-1 row-cols-md-2 g-4 mt-4 mb-4">
-              <div class="col">
-                  <div class="card text-white mb-3">
-                      <div class="card-header">Ohio</div>
-                      <div class="card-body">
-                        <p class="card-text"><fa-icon [icon]="personIcon"></fa-icon>Dilli Adhikari</p>
-                        <p class="card-text"><fa-icon [icon]="locationIcon"></fa-icon>1279 E Dublin Grandville Rd. Columbus, Ohio 43229</p>
-                        <p class="card-text"><fa-icon [icon]="phoneIcon"></fa-icon>614-601-6127</p>
-                        <p class="card-text"><fa-icon [icon]="faxIcon"></fa-icon>614-601-6160</p>
-                        <p class="card-text"><fa-icon [icon]="emailIcon"></fa-icon>columbus@intrahc.com</p>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="col">
-                  <div class="card text-white mb-3">
-                      <div class="card-header">Pennsylvania</div>
-                      <div class="card-body">
-                        <p class="card-text"><fa-icon [icon]="personIcon"></fa-icon>Govinda Khatiwada</p>
-                        <p class="card-text"><fa-icon [icon]="locationIcon"></fa-icon>4745 Clairton Blvd Pittsburgh, PA 15236</p>
-                        <p class="card-text"><fa-icon [icon]="phoneIcon"></fa-icon>412-721-3582</p>
-                        <p class="card-text"><fa-icon [icon]="faxIcon"></fa-icon>412-881-7101</p>
-                        <p class="card-text"><fa-icon [icon]="emailIcon"></fa-icon>gkhatiwada@intrahc.com</p>
-                      </div>
-                  </div>
-              </div>
+    <h3>Contact Us</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-4">
+        <div class="col">
+            <div class="card text-white mb-3">
+                <div class="card-header">Ohio</div>
+                <div class="card-body">
+                  <p class="card-text"><fa-icon [icon]="personIcon"></fa-icon>Dilli Adhikari</p>
+                  <p class="card-text"><fa-icon [icon]="locationIcon"></fa-icon>1279 E Dublin Grandville Rd. Columbus, Ohio 43229</p>
+                  <p class="card-text"><fa-icon [icon]="phoneIcon"></fa-icon>614-601-6127</p>
+                  <p class="card-text"><fa-icon [icon]="faxIcon"></fa-icon>614-601-6160</p>
+                  <p class="card-text"><fa-icon [icon]="emailIcon"></fa-icon>columbus@intrahc.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card text-white mb-3">
+                <div class="card-header">Pennsylvania</div>
+                <div class="card-body">
+                  <p class="card-text"><fa-icon [icon]="personIcon"></fa-icon>Govinda Khatiwada</p>
+                  <p class="card-text"><fa-icon [icon]="locationIcon"></fa-icon>4745 Clairton Blvd Pittsburgh, PA 15236</p>
+                  <p class="card-text"><fa-icon [icon]="phoneIcon"></fa-icon>412-721-3582</p>
+                  <p class="card-text"><fa-icon [icon]="faxIcon"></fa-icon>412-881-7101</p>
+                  <p class="card-text"><fa-icon [icon]="emailIcon"></fa-icon>gkhatiwada@intrahc.com</p>
+                </div>
+            </div>
+        </div>
 
-              <div class="col">
-                  <div class="card text-white mb-3">
-                      <div class="card-header">Michigan</div>
-                      <div class="card-body">
-                        <p class="card-text"><fa-icon [icon]="personIcon"></fa-icon>Dilli Adhikari</p>
-                        <p class="card-text"><fa-icon [icon]="locationIcon"></fa-icon>2120 44th Street South East, Suite 200 Kentwood, Michigan 49508</p>
-                        <p class="card-text"><fa-icon [icon]="phoneIcon"></fa-icon>614-601-6127</p>
-                        <p class="card-text"><fa-icon [icon]="faxIcon"></fa-icon>614-601-6160</p>
-                        <p class="card-text"><fa-icon [icon]="emailIcon"></fa-icon>columbus@intrahc.com</p>
-                      </div>
+        <div class="col">
+            <div class="card text-white mb-3">
+                <div class="card-header">Michigan</div>
+                <div class="card-body">
+                  <p class="card-text"><fa-icon [icon]="personIcon"></fa-icon>Dilli Adhikari</p>
+                  <p class="card-text"><fa-icon [icon]="locationIcon"></fa-icon>2120 44th Street South East, Suite 200 Kentwood, Michigan 49508</p>
+                  <p class="card-text"><fa-icon [icon]="phoneIcon"></fa-icon>614-601-6127</p>
+                  <p class="card-text"><fa-icon [icon]="faxIcon"></fa-icon>614-601-6160</p>
+                  <p class="card-text"><fa-icon [icon]="emailIcon"></fa-icon>columbus@intrahc.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>Thank you for visiting our site. If you have any comment, concern, or question, feel free to fill out the form bellow:</p>
+    <div class="contact-form">
+        <h5>Please fill out the form below</h5>
+        <hr>
+        <form [formGroup]="contactForm" #contact="ngForm" (submit)="contact.valid && onSubmit()">
+          <div class="mt-2 mb-2">
+              <div class="row">
+                  <div class="col-6">
+                      <label for="firstname">First Name<strong>*</strong></label>
+                      <input type="text" class="form-control"  formControlName="firstName" 
+                          [ngClass]="{'is-invalid': contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid
+                          || contact.submitted && contactForm.get('firstName')?.invalid}"
+                      >
+                      <small class="invalid-feedback" *ngIf="contactForm.get('firstName')?.errors?.['required']">First name cannot be blank</small>
+                  </div>
+                  <div class="col-6">
+                      <label for="lastname">Last Name<strong>*</strong></label>
+                      <input type="text" class="form-control"  formControlName="lastName" 
+                          [ngClass]="{'is-invalid': contactForm.get('lastName')?.touched && contactForm.get('lastName')?.invalid
+                          || contact.submitted && contactForm.get('lastName')?.invalid}"
+                      >
+                      <small class="invalid-feedback" *ngIf="contactForm.get('lastName')?.errors?.['required']">Last name cannot be blank</small>
                   </div>
               </div>
           </div>
-
-          <p>Thank you for visiting our site. If you have any comment, concern, or question, feel free to fill out the form bellow:</p>
-          <div class="contact-form">
-              <h5>Please fill out the form below</h5>
-              <hr>
-              <form [formGroup]="contactForm" #contact="ngForm" (submit)="contact.valid && onSubmit()">
-                <div class="mt-2 mb-2">
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="firstname">First Name</label>
-                            <input type="text" class="form-control"  formControlName="firstName" 
-                                [ngClass]="{'is-invalid': contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid
-                                || contact.submitted && contactForm.get('firstName')?.invalid}"
-                            >
-                            <small class="invalid-feedback" *ngIf="contactForm.get('firstName')?.errors?.['required']">First name cannot be blank</small>
-                        </div>
-                        <div class="col-6">
-                            <label for="lastname">Last Name</label>
-                            <input type="text" class="form-control"  formControlName="lastName" 
-                                [ngClass]="{'is-invalid': contactForm.get('lastName')?.touched && contactForm.get('lastName')?.invalid
-                                || contact.submitted && contactForm.get('lastName')?.invalid}"
-                            >
-                            <small class="invalid-feedback" *ngIf="contactForm.get('lastName')?.errors?.['required']">Last name cannot be blank</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-2 mb-2">
-                    <label for="address1">Email</label>
-                    <input type="text" class="form-control"  formControlName="email" 
-                        [ngClass]="{'is-invalid': contactForm.get('email')?.touched && contactForm.get('email')?.invalid
-                        || contact.submitted && contactForm.get('email')?.invalid}"
-                    >
-                    <small class="invalid-feedback" *ngIf="contactForm.get('email')?.errors?.['required']">Email field cannot be empty</small>
-                    <small class="invalid-feedback" *ngIf="contactForm.get('email')?.errors?.['email']">Invalid email</small>
-                </div>
-                <div class="mt-2 mb-2">
-                    <label for="address1">Phone</label>
-                    <input type="text" class="form-control"  formControlName="phone" 
-                        [ngClass]="{'is-invalid': contactForm.get('phone')?.touched && contactForm.get('phone')?.invalid
-                        || contact.submitted && contactForm.get('phone')?.invalid}"
-                    >
-                    <small class="invalid-feedback" *ngIf="contactForm.get('phone')?.errors?.['required']">Phone number cannot be empty</small>
-                    <small class="invalid-feedback" *ngIf="contactForm.get('phone')?.errors?.['pattern']">Invalid phone</small>
-                </div>
-                <div class="mt-2 mb-2">
-                    <label for="address1">Comment / Question</label>
-                    <textarea type="text" class="form-control"  formControlName="comment" rows="5"
-                        [ngClass]="{'is-invalid': contactForm.get('comment')?.touched && contactForm.get('comment')?.invalid
-                        || contact.submitted && contactForm.get('comment')?.invalid}"
-                    ></textarea>
-                    <small class="invalid-feedback" *ngIf="contactForm.get('comment')?.errors?.['required']">Please add the comment or question</small>
-                </div>
-                
-                <button class="btn btn-primary mt-4 mb-2">Submit</button>
-            </form>
+          <div class="mt-2 mb-2">
+              <label for="address1">Email<strong>*</strong></label>
+              <input type="text" class="form-control"  formControlName="email" 
+                  [ngClass]="{'is-invalid': contactForm.get('email')?.touched && contactForm.get('email')?.invalid
+                  || contact.submitted && contactForm.get('email')?.invalid}"
+              >
+              <small class="invalid-feedback" *ngIf="contactForm.get('email')?.errors?.['required']">Email field cannot be empty</small>
+              <small class="invalid-feedback" *ngIf="contactForm.get('email')?.errors?.['email']">Invalid email</small>
           </div>
-      </div>
-  </div>  
+          <div class="mt-2 mb-2">
+              <label for="address1">Phone<strong>*</strong></label>
+              <input type="text" class="form-control"  formControlName="phone" 
+                  [ngClass]="{'is-invalid': contactForm.get('phone')?.touched && contactForm.get('phone')?.invalid
+                  || contact.submitted && contactForm.get('phone')?.invalid}"
+              >
+              <small class="invalid-feedback" *ngIf="contactForm.get('phone')?.errors?.['required']">Phone number cannot be empty</small>
+              <small class="invalid-feedback" *ngIf="contactForm.get('phone')?.errors?.['pattern']">Invalid phone</small>
+          </div>
+          <div class="mt-2 mb-2">
+              <label for="address1">Comment / Question <strong>*</strong></label>
+              <textarea type="text" class="form-control"  formControlName="comment" rows="5"
+                  [ngClass]="{'is-invalid': contactForm.get('comment')?.touched && contactForm.get('comment')?.invalid
+                  || contact.submitted && contactForm.get('comment')?.invalid}"
+              ></textarea>
+              <small class="invalid-feedback" *ngIf="contactForm.get('comment')?.errors?.['required']">Please add the comment or question</small>
+          </div>
+          
+          <button class="btn btn-primary mt-4 mb-2">Submit</button>
+      </form>
+    </div>
 </div>

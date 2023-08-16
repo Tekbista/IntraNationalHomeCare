@@ -23,13 +23,17 @@ export class CareersComponent implements OnInit {
     licenseType: new FormControl(null, [Validators.required]),
     shift: new FormControl(null, [Validators.required]),
     hear: new FormControl(null, [Validators.required]),
-    experience: new FormControl(null, [Validators.required]),
     resume: new FormControl(null, [Validators.required]),
   })
+
   constructor() { }
 
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    console.log(this.careerForm.value)
   }
 
 }

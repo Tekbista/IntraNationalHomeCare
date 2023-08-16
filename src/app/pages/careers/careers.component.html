@@ -1,67 +1,94 @@
 <div class="container mx-auto mt-2 mb-2 pt-2 pb-2">
    
-    <div class="row d-flex mt-2 mb-2 p-3">
-        <div class="col-md-3 p-2 sidebar">
-            <app-sidebar></app-sidebar>
-        </div>
-        <div class="col-md-8 p-4">
-            <h3>Careers</h3>
+    <h3>Careers</h3>
             <p>To apply, please complete the form below with your information.</p>
             <div class="career-form">
                 <h5>Please fill out the form below:</h5>
                 <hr>
 
-                <form [formGroup]="careerForm">
+                <form [formGroup]="careerForm" #career="ngForm" (submit)="career.valid && onSubmit()">
                     <div class="mt-2 mb-2">
                         <div class="row">
                             <div class="col-sm-6">
-                                <label for="firstName">Firstname</label>
-                                <input type="text" formControlName="firstName" class="form-control form-control-sm">
+                                <label for="firstName">First name <strong>*</strong></label>
+                                <input type="text" formControlName="firstName" class="form-control form-control-sm"
+                                    [ngClass]="{'is-invalid': careerForm.get('firstName')?.touched && careerForm.get('firstName')?.invalid
+                                    || career.submitted && careerForm.get('firstName')?.invalid}"
+                                >
+                                <small class="invalid-feedback" *ngIf="careerForm.get('firstName')?.errors?.['required']">First name cannot be blank</small>
                             </div>
                             <div class="col-sm-6">
-                                <label for="lastName">Lastname</label>
-                                <input type="text" formControlName="lastName" class="form-control form-control-sm">
+                                <label for="lastName">Last name <strong>*</strong></label>
+                                <input type="text" formControlName="lastName" class="form-control form-control-sm"
+                                    [ngClass]="{'is-invalid': careerForm.get('lastName')?.touched && careerForm.get('lastName')?.invalid 
+                                    || career.submitted && careerForm.get('lastName')?.invalid }"
+                                >
+                                <small class="invalid-feedback" *ngIf="careerForm.get('lastName')?.errors?.['required']">Last name cannot be blank</small>
                             </div>
                         </div>
                     </div>
                     <div class="mt-2 mb-2">
-                        <label for="address">Address</label>
-                        <input type="text" formControlName="address" class="form-control form-control-sm">
+                        <label for="address">Address <strong>*</strong></label>
+                        <input type="text" formControlName="address" class="form-control form-control-sm"
+                            [ngClass]="{'is-invalid': careerForm.get('address')?.touched && careerForm.get('address')?.invalid
+                            || career.submitted && careerForm.get('address')?.invalid}"
+                        >
+                        <small class="invalid-feedback" *ngIf="careerForm.get('address')?.errors?.['required']">Address cannot be blank.</small>
                     </div>
                     <div class="mt-2 mb-2">
                         <div class="row">
                             <div class="col-sm-4">
-                                <label for="city">City</label>
-                                <input type="text" formControlName="city" class="form-control form-control-sm">
+                                <label for="city">City <strong>*</strong></label>
+                                <input type="text" formControlName="city" class="form-control form-control-sm"
+                                    [ngClass]="{'is-invalid': careerForm.get('city')?.touched && careerForm.get('city')?.invalid
+                                    || career.submitted && careerForm.get('city')?.invalid}"
+                                >
+                                <small [ngClass]="'invalid-feedback'" *ngIf="careerForm.get('city')?.errors?.['required']">City cannot be blank</small>
                             </div>
                             <div class="col-sm-4">
-                                <label for="state">State</label>
-                                <select class="form-select form-select-sm">
+                                <label for="state">State <strong>*</strong></label>
+                                <select class="form-select form-select-sm" formControlName="state"
+                                    [ngClass]="{'is-invalid': careerForm.get('state')?.touched && careerForm.get('state')?.invalid
+                                    || career.submitted && careerForm.get('state')?.invalid}"
+                                >
                                     <option  disabled selected>Select State</option>
                                     <option value="Ohio">Ohio</option>
                                     <option value="Michigan">Michigan</option>
-                                  </select>
+                                </select>
+                                <small [ngClass]="'invalid-feedback'" *ngIf="careerForm.get('state')?.errors?.['required']">Please select the state</small>
                             </div>
                             <div class="col-sm-4">
-                                <label for="zipCode">Zip Code</label>
-                                <input type="text" formControlName="zipCode" class="form-control form-control-sm">
+                                <label for="zipCode">Zip Code <strong>*</strong></label>
+                                <input type="text" formControlName="zipCode" class="form-control form-control-sm"
+                                    [ngClass]="{'is-invalid': careerForm.get('zipCode')?.touched && careerForm.get('zipCode')?.invalid
+                                    || career.submitted && careerForm.get('zipCode')?.invalid}"
+                                >
+                                <small [ngClass]="'invalid-feedback'" *ngIf="careerForm.get('zipCode')?.errors?.['required']">Zip code cannot be blank</small>
                             </div>
                         </div>
                     </div>
                     <div class="mt-2 mb-4">
                         <div class="row">
                             <div class="col-sm-6">
-                                <label for="phone">Phone</label>
-                                <input type="text" formControlName="phone" class="form-control form-control-sm">
+                                <label for="phone">Phone <strong>*</strong></label>
+                                <input type="text" formControlName="phone" class="form-control form-control-sm"
+                                    [ngClass]="{'is-invalid': careerForm.get('phone')?.touched && careerForm.get('phone')?.invalid
+                                    || career.submitted && careerForm.get('phone')?.invalid}"
+                                >
+                                <small [ngClass]="'invalid-feedback'" *ngIf="careerForm.get('phone')?.errors?.['required']">Phone cannot be blank</small>
                             </div>
                             <div class="col-sm-6">
-                                <label for="email">Email</label>
-                                <input type="text" formControlName="email" class="form-control form-control-sm">
+                                <label for="email">Email <strong>*</strong></label>
+                                <input type="text" formControlName="email" class="form-control form-control-sm"
+                                [ngClass]="{'is-invalid': careerForm.get('email')?.touched && careerForm.get('email')?.invalid
+                                    || career.submitted && careerForm.get('email')?.invalid}"
+                                >
+                                <small [ngClass]="'invalid-feedback'" *ngIf="careerForm.get('email')?.errors?.['required']">Email cannot be blank</small>
                             </div>
                         </div>
                     </div>
                     <div class="mt-2 mb-2">
-                        <label for="address">Are you over 18?</label>
+                        <label for="address">Are you over 18? <strong>*</strong></label>
                         <div class="form-check">
                             <div class="row">
                                 <div class="col-sm-2">
@@ -77,7 +104,7 @@
                     </div>
 
                     <div class="mt-2 mb-2">
-                        <label for="address">Do you have driver license?</label>
+                        <label for="address">Do you have driver license? <strong>*</strong></label>
                         <div class="form-check">
                             <div class="row">
                                 <div class="col-sm-2">
@@ -93,7 +120,7 @@
                     </div>
 
                     <div class="mt-2 mb-2">
-                        <label for="address">Do you own a car?</label>
+                        <label for="address">Do you own a car? <strong>*</strong></label>
                         <div class="form-check">
                             <div class="row">
                                 <div class="col-sm-2">
@@ -109,7 +136,7 @@
                     </div>
 
                     <div class="mt-2 mb-2">
-                        <label for="address">What license do you currently hold?</label>
+                        <label for="address">What license do you currently hold? <strong>*</strong></label>
                         <div class="form-check">
                             <div class="row">
                                 <div class="col-sm-2">
@@ -133,7 +160,7 @@
                     </div>
                     
                     <div class="mt-2 mb-4">
-                        <label for="address">What shift do you prefer?</label>
+                        <label for="address">What shift do you prefer? <strong>*</strong></label>
                         <div class="form-check">
                             <div class="row">
                                 <div class="col-sm-2">
@@ -156,24 +183,24 @@
                         </div>
                     </div>
                     <div class="mt-2 mb-2">
-                        <label for="address">How did you hear about us?</label>
-                        <input type="text"  formControlName="hear" class="form-control form-control-sm">
+                        <label for="hear">How did you hear about us? <strong>*</strong></label>
+                        <input type="text"  formControlName="hear" class="form-control form-control-sm"
+                        [ngClass]="{'is-invalid': careerForm.get('hear')?.touched && careerForm.get('hear')?.invalid
+                                    || career.submitted && careerForm.get('hear')?.invalid}"
+                                >
+                        <small [ngClass]="'invalid-feedback'" *ngIf="careerForm.get('hear')?.errors?.['required']">Hear cannot be blank</small>
                     </div>
-                    <div class="mt-2 mb-2">
-                        <label for="address">Previous Experience</label>
-                        <textarea type="text" rows="5" formControlName="experience" class="form-control form-control-sm"></textarea>
-                    </div>
+                
                     <div class="mt-2 mb-4">
-                        <label for="address">Attach your resume</label>
-                        <input type="file"  formControlName="resume" class="form-control form-control-sm">
+                        <label for="resume">Attach your resume <strong>*</strong></label>
+                        <input type="file"  formControlName="resume" class="form-control form-control-sm"
+                            [ngClass]="{'is-invalid': career.submitted && careerForm.get('resume')?.invalid}"
+                        >
+                        <small [ngClass]="'invalid-feedback'" *ngIf="careerForm.get('resume')?.errors?.['required']">Please select your resume</small>
                     </div>
                     <button class="btn btn-primary">Submit</button>
                 </form>
 
             </div>
-            
-        </div>
-        
-    </div>
   
 </div>
